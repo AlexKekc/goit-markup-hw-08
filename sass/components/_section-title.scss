@@ -1,7 +1,17 @@
 .section-title {
   margin-bottom: 0;
 
-  @include font(700, 36px, 1.16, null);
+  @include mobile {
+    @include font(700, 28px, 1.18, null);
+  }
+
+  @include tablet {
+    @include font(700, 28px, 1.18, null);
+  }
+
+  @include desktop {
+    @include font(700, 36px, 1.16, null);
+  }
   text-align: center;
 
   color: var(--title-text-color);
