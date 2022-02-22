@@ -2,12 +2,3 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.section-title {
-  margin-bottom: 0;
-
-  @include font(700, 36px, 1.16, null);
-  text-align: center;
-
-  color: var(--title-text-color);
-}
