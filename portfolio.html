@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="page-header">
+    <div class="page-header__container container">
+      <a href="/" class="page-header__logo logo">Web<span class="page-header__logo--black">Studio</span></a>
+  
+      <!-- Навигация сайта -->
+      <nav>
+        <ul class="site-nav list">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link current-link">Портфолио</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <ul class="contacts-nav list">
+        <li class="contacts-nav__item">
+          <a href="mailto:info@devstudio.com" class="contacts-nav__link">
+            <svg class="contacts-nav__icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope-icon"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="contacts-nav__item">
+          <a href="tel:+380961111111" class="contacts-nav__link">
+            <svg class="contacts-nav__icon" width="10" height="16">
+              <use href="./images/icons.svg#smartphone-icon"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <!-- Основная часть сайта -->
+  <main>
+    <!-- Примеры работ -->
+    <section class="portfolio section">
+      <div class="container">
+        <h1 class="portfolio__title section-title visually-hidden">Примеры работ</h1>
+        
+        <ul class="filter list">
+          <li class="filter__item">
+            <button type="button" class="filter__button button button--current">Все</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button button">Веб-сайты</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button button">Приложения</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button button">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button button">Маркетинг</button>
+          </li>
+        </ul>
+        
+        <ul class="work-examples list">
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/website-1.jpg" 
+                  alt="Ноутбук с открытым сайтом" 
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Технокряк это современная площадка распространения коронавируса. 
+                    Компании используют эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Технокряк</h2>
+                <p class="wrap__label">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/design-1.jpg" 
+                  alt="Баскетболисты" 
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    «Нью-Орлеан Пеликанс» — профессиональный баскетбольный клуб, выступающий в Национальной
+                    баскетбольной ассоциации. Изначально годом основания команды считался 1988 год
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="wrap__label">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/application-1.jpg" 
+                  alt="Лого ресторана" 
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Ресторан Seafood. В меню – лучшие предложения моря: камбала, сарган, бычки, 
+                    лобстеры, икра, живые устрицы и много другого. Разнообразная
+                    алкогольная карта
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="wrap__label">Приложение</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/marketing-1.jpg" 
+                  alt="Наушники"
+                  width="370"
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Проект Prime это идеальное соотношение достижений новейших технологий. 
+                    Пассивная система снижения окружающих шумов, идеальный комфорт
+                    использования и доступная цена
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Проект <span lang="en">Prime</span></h2>
+                <p class="wrap__label">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/application-2.jpg"   
+                  alt="Две коробки" 
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Проект Boxes это негерметичная ёмкость в форме многогранника
+                    (чаще всего — прямоугольного параллелепипеда), выполненная из картона или
+                    другого плотного материала
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Проект <span lang="en">Boxes</span></h2>
+                <p class="wrap__label">Приложение</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/website-2.jpg" 
+                  alt="Монитор"
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Прежде, чем выбрать слова для описания сайта — мета тег description, 
+                    посмотрите на контент страницы. Есть одно искушение, которому легко поддаться — 
+                    написать более общее описание сайта
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title" lang="en">Inspiration has no Borders</h2>
+                <p class="wrap__label">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/design-2.jpg" 
+                  alt="Открытая книга"
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Дизайн издания - вкратце, концепция всех глянцевых журналов подходит 
+                    под три слова: красота, поклонники, карьера
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Издание <span lang="en">Limited Edition</span></h2>
+                <p class="wrap__label">Дизайн</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/marketing-2.jpg" 
+                  alt="Картонный ярлык"
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Проект Маркетинга это организационная функция и совокупность процессов создания, 
+                    продвижения и предоставления продукта или услуги покупателям
+                    и управление взаимоотношениями с ними с выгодой для организации
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title">Проект <span lang="en">LAB</span></h2>
+                <p class="wrap__label">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-examples__item">
+            <a href="" class="work-examples__link">
+              <div class="work-examples__wrap wrap">
+                <img src="./images/application-3.jpg" 
+                  alt="Человек работает за ноутбуком"
+                  width="370" 
+                  height="294"
+                />
+                <div class="wrap__overlay">
+                  <p class="wrap__text">
+                    Приложение для роста бизнеса создан, чтобы увеличить прибыль в два раза, 
+                    может хватить какого-то мелкого улучшения конверсии на 5 %
+                  </p>
+                </div>
+              </div>
+              <div class="wrap__container">
+                <h2 class="wrap__title" lang="en">Growing Business</h2>
+                <p class="wrap__label">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта-->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="contacts">
+        <a href="/" class="footer__logo logo">Web<span class="footer__logo--white">Studio</span></a>
+        <address>
+          <ul class="contacts__list list">
+            <li class="contacts__item">
+              <a href="https://goo.gl/maps/LnpC9YfZU35sji429" 
+                target="_blank" 
+                rel="noopener noreferrer nofollow"
+                class="contacts__link contacts__link--white">г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:info@example.com" class="contacts__link">info@example.com</a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380991111111" class="contacts__link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+  
+      <div class="socials-contacts">
+        <p class="socials-contacts__label">присоединяйтесь</p>
+        
+        <ul class="socials__list socials__list--wrap list">
+          <li class="socials__item">
+            <a href="" class="socials__link socials__link--grey" aria-label="Instagram">
+              <svg class="socials__icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link socials__link--grey" aria-label="Twitter">
+              <svg class="socials__icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link socials__link--grey" aria-label="Facebook">
+              <svg class="socials__icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link socials__link--grey" aria-label="LinkedIn">
+              <svg class="socials__icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-subscription">
+        <p class="footer-subscription__title">Подпишитесь на рассылку</p>
+        <form class="subscribe-form">
+          <label>
+            <input type="email" name="subcribe-email" class="subscribe-form__input" placeholder="E-mail" required />
+          </label>
+      
+          <button type="submit" class="subscribe-form__button">Подписаться
+            <svg class="subscribe-form__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

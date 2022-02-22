@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.button__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

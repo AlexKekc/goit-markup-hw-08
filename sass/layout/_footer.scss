@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bg-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  &--white {
+    color: var(--secondary-text-color);
+  }
+}
+
+.contacts__item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.contacts__link {
+  font-family: Roboto;
+  font-style: normal;
+  @include font(null, 14px, 1.71, null);
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--white {
+    color: var(--secondary-text-color);
+  }
+}
+
+.socials-contacts {
+  margin-left: 70px;
+}
+
+.socials-contacts__label {
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-subscription {
+  margin-left: auto;
+}
+
+.footer-subscription__title {
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-form__input {
+  @extend %flex-align;
+
+  padding: 15px 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  @include font(null, 16px, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  &::placeholder {
+    @include font(null, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-form__button {
+  @extend %flex-align;
+  justify-content: center;
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  @include font(700, 16px, 1.87, 0.06em);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+
+  transition: background-color 250ms var(--transition-cubic);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-hover);
+  }
+}
+
+.subscribe-form__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
