@@ -1,4 +1,7 @@
 .skills {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
   padding-bottom: 94px;
 }
@@ -21,6 +24,7 @@
 
 .skills__container {
   position: relative;
+  z-index: 1;
 }
 
 .skills__label {

@@ -3,23 +3,40 @@
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
 }
 
 .team__item {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+
+  @include tablet {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+  }
 }
 
 .crewman-card {
-  padding: 30px 32px;
+  padding: 30px 0 24px 0;
+
+  @include desktop {
+    padding: 30px 32px;
+  }
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
