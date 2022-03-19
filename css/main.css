@@ -21,7 +21,7 @@
   margin: -1px;
 }
 
-.contacts-nav__link, .socials__list, .socials__link, .socials__link--grey, .modal__close-btn, .modal-form, .modal-form__agreement, .modal-form__label-check, .modal-form__label-check span, .page-header__container, .features__wrap, .features__icon, .skills__label, .clients__list, .clients__link, .subscribe-form__input, .subscribe-form__button {
+.contacts-nav__link, .socials__list, .socials__link, .socials__link--grey, .modal__close-btn, .modal-form, .modal-form__agreement, .modal-form__label-check, .modal-form__label-check span, .page-header__container, .features__wrap, .features__icon, .skills__label, .subscribe-form__input, .subscribe-form__button {
   display: flex;
   align-items: center;
 }
@@ -758,26 +758,65 @@ body {
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  justify-content: center;
+  margin-bottom: calc(-1 * var(--card-set-gap));
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.clients__item + .clients__item {
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.clients__item {
+  margin-bottom: var(--card-set-gap);
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: content;
+  }
+}
+
 .clients__link {
+  display: flex;
+  align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 170px;
+  width: auto;
   height: 92px;
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
   color: var(--social-link-color);
   transition: color 250ms var(--transition-cubic), border-color 250ms var(--transition-cubic);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {
