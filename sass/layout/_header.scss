@@ -1,5 +1,6 @@
 .page-header__container {
-  @extend %flex-align;
+  display: flex;
+  align-items: center;
 }
 
 .page-header {
@@ -38,5 +39,8 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+  @include tablet {
+    display: none;
   }
 }
