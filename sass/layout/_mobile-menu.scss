@@ -1,0 +1,127 @@
+.menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  margin-bottom: 8px;
+  padding: 0;
+
+  border: none;
+
+  background-color: var(--primary-bg-color);
+  color: var(--title-text-color);
+
+  transition: color 250ms var(--transition-cubic);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: var(--primary-bg-color);
+
+  transition: opacity 500ms, visibility 500ms;
+}
+
+// .mobile-menu.is-hidden {
+//   transform: translateY(80%);
+// }
+
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mobile-menu-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu-nav__link {
+  @include font(500, 40px, 1.18, 0.02em);
+  text-decoration: none;
+
+  color: var(--title-text-color);
+
+  transition: color 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu-nav__link.current-page {
+  color: var(--accent-color);
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu-contacts__phone {
+  @include font(500, 34px, 1.17, 0.02em);
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.mobile-menu-contacts__mail {
+  @include font(500, 24px, 1.16, 0.02em);
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+}
+
+.mobile-menu-socials {
+  display: flex;
+}
+
+.mobile-menu-socials__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mobile-menu-socials__link {
+  @include font(500, 18px, 1.22, 0.02em);
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.mobile-menu-socials__link::after {
+  content: '';
+
+  width: 22px;
+  height: 0px;
+
+  background-color: var(--accent-color);
+}

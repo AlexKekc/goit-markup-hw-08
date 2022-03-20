@@ -1,6 +1,7 @@
 .contacts-nav {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
+  display: none;
 }
 
 .contacts-nav__item:not(:last-child) {
@@ -28,6 +29,5 @@
 
 .contacts-nav__icon {
   margin-right: 10px;
-
   fill: currentColor;
 }

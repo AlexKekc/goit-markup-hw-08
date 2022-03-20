@@ -100,9 +100,9 @@
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   @include desktop {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -114,6 +114,10 @@
 
   width: auto;
   height: 50px;
+  @include mobile {
+    width: 450px;
+  }
+
   @include desktop {
     display: flex;
     align-items: center;
