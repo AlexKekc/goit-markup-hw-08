@@ -1,20 +1,32 @@
 .contacts-nav {
   display: none;
+
   @include tablet {
-    display: flex;
+    display: block;
     margin-left: auto;
+  }
+
+  @include desktop {
+    display: flex;
   }
 }
 
 .contacts-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+  
+  @include desktop {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-nav__link {
   @extend %flex-align;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   @include font(500, 14px, 1.14, 0.02em);
   text-decoration: none;
