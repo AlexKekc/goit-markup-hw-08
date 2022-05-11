@@ -12,6 +12,14 @@
   }
 }
 
+.footer-tablet__container {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
 .footer__logo {
   text-align: center;
   margin-bottom: 20px;
@@ -61,9 +69,14 @@
 
 .socials-contacts {
   margin-bottom: 60px;
+
+  @include tablet {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
+
   @include desktop {
     margin-left: 70px;
-    margin-bottom: 0;
   }
 }
 
