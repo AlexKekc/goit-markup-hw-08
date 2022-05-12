@@ -1,13 +1,37 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-content: space-between;
+  margin-bottom: 40px;
 
-  margin-bottom: 50px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item + .filter__item {
   margin-left: 8px;
+  
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(4) {
+    margin-left: 0;
+    
+    @include tablet {
+      margin-left: 8px;
+    }
+  }
 }
 
 .filter__button {
@@ -37,18 +61,32 @@
 }
 
 .work-examples {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--card-set-gap));
+  
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
 
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  @include desktop {
+    margin-top: calc(-1 * var(--card-set-gap));
+  }
 }
 
 .work-examples__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-bottom: var(--card-set-gap);
 
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  @include tablet {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 }
 
 .work-examples__link {

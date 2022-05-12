@@ -11,6 +11,7 @@
 
 .team__list {
   margin-bottom: calc(-1 * var(--card-set-gap));
+  
   @include tablet {
     display: flex;
     flex-wrap: wrap;
