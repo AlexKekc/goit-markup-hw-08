@@ -1363,12 +1363,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .work-examples {
-    margin-top: calc(-1 * var(--card-set-gap));
-  }
-}
-
 .work-examples__item {
   margin-bottom: var(--card-set-gap);
 }
@@ -1383,8 +1377,6 @@ body {
 @media screen and (min-width: 1200px) {
   .work-examples__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
   }
 }
 
