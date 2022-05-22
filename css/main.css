@@ -251,6 +251,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -269,6 +270,7 @@ body {
 
 .modal {
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -283,7 +285,6 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    min-height: 609px;
   }
 }
 
@@ -922,7 +923,6 @@ body {
 
 .skills__container {
   position: relative;
-  z-index: 1;
 }
 
 .skills__label {
