@@ -52,6 +52,10 @@ body {
   color: var(--primary-text-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   padding: 0;
