@@ -32,9 +32,10 @@
   padding: 40px;
   
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
 
   @include mobile {
+    margin: 0;
     width: 450px;
     height: 609px;
   }
