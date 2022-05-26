@@ -290,7 +290,6 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .modal {
-    margin: 0;
     width: 450px;
     height: 609px;
   }
